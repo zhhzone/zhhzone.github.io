@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title></title>
+  
+  <subtitle>~ ~ ~ ~ ~ ~</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://zhhzone.github.io/"/>
+  <updated>2017-11-09T15:43:28.000Z</updated>
+  <id>https://zhhzone.github.io/</id>
+  
+  <author>
+    <name>walter</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>psr-11</title>
+    <link href="https://zhhzone.github.io/2017/11/07/psr16/"/>
+    <id>https://zhhzone.github.io/2017/11/07/psr16/</id>
+    <published>2017-11-07T08:34:42.000Z</published>
+    <updated>2017-11-09T15:43:28.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.php-fig.org/psr/psr-11/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PSR-11&lt;/a&gt;&lt;br&gt;This document describes a common
+        
+      
+    
+    </summary>
+    
+      <category term="psr" scheme="https://zhhzone.github.io/categories/psr/"/>
+    
+      <category term="设计模式" scheme="https://zhhzone.github.io/categories/psr/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+    
+      <category term="php" scheme="https://zhhzone.github.io/tags/php/"/>
+    
+      <category term="psr" scheme="https://zhhzone.github.io/tags/psr/"/>
+    
+      <category term="设计模式" scheme="https://zhhzone.github.io/tags/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>psr6</title>
+    <link href="https://zhhzone.github.io/2017/10/31/psr6/"/>
+    <id>https://zhhzone.github.io/2017/10/31/psr6/</id>
+    <published>2017-10-31T07:12:22.000Z</published>
+    <updated>2018-04-11T14:44:03.383Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.php-fig.org/psr/psr-6/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PHP psr6&lt;/a&gt;&lt;br&gt;The goal of this PSR is to allow
+        
+      
+    
+    </summary>
+    
+      <category term="php" scheme="https://zhhzone.github.io/categories/php/"/>
+    
+    
+      <category term="php" scheme="https://zhhzone.github.io/tags/php/"/>
+    
+      <category term="psr" scheme="https://zhhzone.github.io/tags/psr/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>psr4</title>
+    <link href="https://zhhzone.github.io/2017/10/30/psr4/"/>
+    <id>https://zhhzone.github.io/2017/10/30/psr4/</id>
+    <published>2017-10-29T16:00:00.000Z</published>
+    <updated>2017-10-31T07:13:39.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.php-fig.org/psr/psr-4&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PHP PSR-4&lt;/a&gt;&lt;br&gt;This PSR describes a
+        
+      
+    
+    </summary>
+    
+      <category term="php" scheme="https://zhhzone.github.io/categories/php/"/>
+    
+    
+      <category term="php" scheme="https://zhhzone.github.io/tags/php/"/>
+    
+      <category term="psr" scheme="https://zhhzone.github.io/tags/psr/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>psr-3</title>
+    <link href="https://zhhzone.github.io/2017/10/16/2017-10-16/"/>
+    <id>https://zhhzone.github.io/2017/10/16/2017-10-16/</id>
+    <published>2017-10-15T16:00:00.000Z</published>
+    <updated>2017-10-31T07:14:37.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.php-fig.org/psr/psr-3&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PHP PSR-3&lt;/a&gt;&lt;br&gt;This document describes a common
+        
+      
+    
+    </summary>
+    
+      <category term="psr" scheme="https://zhhzone.github.io/categories/psr/"/>
+    
+    
+      <category term="php" scheme="https://zhhzone.github.io/tags/php/"/>
+    
+      <category term="psr" scheme="https://zhhzone.github.io/tags/psr/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>psr1,psr2</title>
+    <link href="https://zhhzone.github.io/2016/10/18/20161025/"/>
+    <id>https://zhhzone.github.io/2016/10/18/20161025/</id>
+    <published>2016-10-18T00:07:00.000Z</published>
+    <updated>2017-10-31T07:15:27.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;blockquote&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.php-fig.org/psr/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PHP-FIG&lt;/a&gt;&lt;br&gt;This section of the standard comprises
+        
+      
+    
+    </summary>
+    
+      <category term="php" scheme="https://zhhzone.github.io/categories/php/"/>
+    
+    
+      <category term="php" scheme="https://zhhzone.github.io/tags/php/"/>
+    
+      <category term="psr" scheme="https://zhhzone.github.io/tags/psr/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>博客第一篇</title>
+    <link href="https://zhhzone.github.io/2016/10/17/2016-10-18/"/>
+    <id>https://zhhzone.github.io/2016/10/17/2016-10-18/</id>
+    <published>2016-10-16T16:00:00.000Z</published>
+    <updated>2017-11-08T10:34:16.000Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;p&gt;目前写博客主要目的是：&lt;/p&gt;
+&lt;p&gt;1.梳理和沉淀自己的技术&lt;br&gt;2.练习写博客&lt;/p&gt;
+
+        
+      
+    
+    </summary>
+    
+      <category term="other" scheme="https://zhhzone.github.io/categories/other/"/>
+    
+    
+      <category term="other" scheme="https://zhhzone.github.io/tags/other/"/>
+    
+  </entry>
+  
+</feed>
