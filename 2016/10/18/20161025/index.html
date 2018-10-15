@@ -74,25 +74,25 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="静以致远" type="application/atom+xml" />
 
 
 
 
 
 
-<meta name="description" content="PHP-FIGThis section of the standard comprises what should be considered the standard coding elements that are required to ensure a high level of technical interoperability between shared PHP code.  1">
+<meta name="description" content="Psr1和Psr2读后代码风格整理完成,作为以后代码书写参考  12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788">
 <meta name="keywords" content="php,psr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="psr1,psr2">
 <meta property="og:url" content="https://zhhzone.github.io/2016/10/18/20161025/index.html">
-<meta property="og:site_name">
-<meta property="og:description" content="PHP-FIGThis section of the standard comprises what should be considered the standard coding elements that are required to ensure a high level of technical interoperability between shared PHP code.  1">
+<meta property="og:site_name" content="静以致远">
+<meta property="og:description" content="Psr1和Psr2读后代码风格整理完成,作为以后代码书写参考  12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-31T07:15:27.000Z">
+<meta property="og:updated_time" content="2018-10-08T08:54:57.339Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="psr1,psr2">
-<meta name="twitter:description" content="PHP-FIGThis section of the standard comprises what should be considered the standard coding elements that are required to ensure a high level of technical interoperability between shared PHP code.  1">
+<meta name="twitter:description" content="Psr1和Psr2读后代码风格整理完成,作为以后代码书写参考  12345678910111213141516171819202122232425262728293031323334353637383940414243444546474849505152535455565758596061626364656667686970717273747576777879808182838485868788">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>psr1,psr2 | </title>
+  <title>psr1,psr2 | 静以致远</title>
   
 
 
@@ -158,7 +158,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title"></span>
+        <span class="site-title">静以致远</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -318,7 +318,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
+      <meta itemprop="name" content="静以致远">
     </span>
 
     
@@ -398,10 +398,13 @@
       
 
       
-        <blockquote>
-<p><a href="http://www.php-fig.org/psr/" target="_blank" rel="noopener">PHP-FIG</a><br>This section of the standard comprises what should be considered the standard coding elements that are required to ensure a high level of technical interoperability between shared PHP code.</p>
-</blockquote>
+        <hr>
+<p>Psr1和Psr2读后代码风格整理完成,作为以后代码书写参考</p>
+<hr>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="keyword">namespace</span> <span class="title">Vendor</span>\<span class="title">Package</span>;</span><br><span class="line"></span><br><span class="line"><span class="keyword">use</span> <span class="title">Footer</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Hello</span> <span class="title">as</span> <span class="title">Hel</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">OtherVender</span>\<span class="title">OtherPackage</span>\<span class="title">BazClass</span>;</span><br><span class="line"><span class="keyword">use</span> <span class="title">Test</span>;</span><br><span class="line"></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment">* Code Style Example</span></span><br><span class="line"><span class="comment">* <span class="doctag">@auth</span> sonw</span></span><br><span class="line"><span class="comment">* <span class="doctag">@date</span> 2016-10-18</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">CodeStyle</span> <span class="keyword">extends</span> <span class="title">Footer</span> <span class="keyword">implements</span></span></span><br><span class="line"><span class="class">    <span class="title">HelloInterface</span>,</span></span><br><span class="line"><span class="class">    <span class="title">Test</span>\<span class="title">TestInterface</span>,</span></span><br><span class="line"><span class="class">    <span class="title">Test</span>\<span class="title">NoneInterface</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">sampleFunction</span><span class="params">($a, $test, $m, $b = <span class="string">'ss'</span>)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> ($a == $b) &#123;</span><br><span class="line">            hel();</span><br><span class="line">        &#125; <span class="keyword">elseif</span> ($a &gt; $b) &#123;</span><br><span class="line">            <span class="keyword">echo</span> <span class="string">'da'</span>;</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">echo</span> <span class="string">'kk'</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">tryCatch</span><span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">    	<span class="comment">//catch error</span></span><br><span class="line">        <span class="keyword">try</span> &#123;         </span><br><span class="line">        	<span class="keyword">throw</span> <span class="keyword">new</span> <span class="keyword">Exception</span>(<span class="string">'error'</span>);</span><br><span class="line">        &#125; <span class="keyword">catch</span> (FirstException $e) &#123;</span><br><span class="line">            </span><br><span class="line">        &#125; <span class="keyword">catch</span> (<span class="keyword">Exception</span> $e) &#123;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">final</span> <span class="keyword">public</span> <span class="keyword">static</span> <span class="function"><span class="keyword">function</span> <span class="title">bar</span><span class="params">($bar)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">switch</span> ($bar) &#123;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">0</span>:</span><br><span class="line">                <span class="keyword">echo</span> <span class="string">'Fisrt case'</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">case</span> <span class="number">1</span>:</span><br><span class="line">                <span class="keyword">echo</span> <span class="string">'Second case'</span>;</span><br><span class="line"></span><br><span class="line">            <span class="keyword">case</span> <span class="number">2</span>:</span><br><span class="line">            <span class="keyword">case</span> <span class="number">3</span>:</span><br><span class="line">                <span class="keyword">echo</span> <span class="string">'This a one '</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                <span class="comment"># code...</span></span><br><span class="line">                <span class="keyword">echo</span> <span class="string">'defalt'</span>;</span><br><span class="line">                <span class="keyword">break</span>;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">cycle</span><span class="params">($expr)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">do</span> &#123;</span><br><span class="line"></span><br><span class="line">        &#125; <span class="keyword">while</span> ( $expr);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">loop</span><span class="params">($item)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">foreach</span> (item <span class="keyword">as</span> $key =&gt; $value) &#123;</span><br><span class="line"></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">$codeStyle = <span class="keyword">new</span> CodeStyle();</span><br><span class="line">$codeStyle-&gt;sampleFunction(</span><br><span class="line">    $a,</span><br><span class="line">    $b,</span><br><span class="line">    $c,</span><br><span class="line">);</span><br><span class="line"></span><br><span class="line"><span class="comment">//closures</span></span><br><span class="line">$var1 = <span class="keyword">new</span> CodeStyle();</span><br><span class="line">$var2 =<span class="number">3</span>;</span><br><span class="line">$closureWithArg = <span class="function"><span class="keyword">function</span> <span class="params">($arg1, $arg2)</span> <span class="title">use</span><span class="params">($var1, $var2)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="meta">?&gt;</span></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><a href="http://www.php-fig.org/psr/" target="_blank" rel="noopener">PHP-FIG</a></p>
+</blockquote>
 
       
     </div>
@@ -523,7 +526,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>

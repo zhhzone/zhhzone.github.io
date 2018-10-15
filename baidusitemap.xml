@@ -4,6 +4,72 @@
 
     
   <url>
+    <loc>https://zhhzone.github.io/2017/10/30/psr4_composr_autoloading/</loc>
+    <lastmod>2018-10-12T10:00:03.126Z</lastmod>
+    <data>
+        <display>
+        <title>composer autoload 解析</title>
+        <pubTime>2017-10-29T16:00:00.000Z</pubTime>
+        
+        <tag>php</tag>
+         
+        <tag>psr</tag>
+         
+         
+           
+             
+              <breadCrumb title="php" url="https://zhhzone.github.io/categories/php/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhhzone.github.io/2017/10/30/psr4/</loc>
+    <lastmod>2018-10-12T07:19:39.764Z</lastmod>
+    <data>
+        <display>
+        <title>psr4</title>
+        <pubTime>2017-10-29T16:00:00.000Z</pubTime>
+        
+        <tag>php</tag>
+         
+        <tag>psr</tag>
+         
+         
+           
+             
+              <breadCrumb title="php" url="https://zhhzone.github.io/categories/php/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
+    <loc>https://zhhzone.github.io/2016/10/18/20161025/</loc>
+    <lastmod>2018-10-08T08:54:57.339Z</lastmod>
+    <data>
+        <display>
+        <title>psr1,psr2</title>
+        <pubTime>2016-10-18T00:07:00.000Z</pubTime>
+        
+        <tag>php</tag>
+         
+        <tag>psr</tag>
+         
+         
+           
+             
+              <breadCrumb title="php" url="https://zhhzone.github.io/categories/php/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://zhhzone.github.io/2017/10/31/psr6/</loc>
     <lastmod>2018-04-11T14:44:03.383Z</lastmod>
     <data>
@@ -73,28 +139,6 @@
 
     
   <url>
-    <loc>https://zhhzone.github.io/2016/10/18/20161025/</loc>
-    <lastmod>2017-10-31T07:15:27.000Z</lastmod>
-    <data>
-        <display>
-        <title>psr1,psr2</title>
-        <pubTime>2016-10-18T00:07:00.000Z</pubTime>
-        
-        <tag>php</tag>
-         
-        <tag>psr</tag>
-         
-         
-           
-             
-              <breadCrumb title="php" url="https://zhhzone.github.io/categories/php/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
     <loc>https://zhhzone.github.io/2017/10/16/2017-10-16/</loc>
     <lastmod>2017-10-31T07:14:37.000Z</lastmod>
     <data>
@@ -110,28 +154,6 @@
            
              
               <breadCrumb title="psr" url="https://zhhzone.github.io/categories/psr/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zhhzone.github.io/2017/10/30/psr4/</loc>
-    <lastmod>2017-10-31T07:13:39.000Z</lastmod>
-    <data>
-        <display>
-        <title>psr4</title>
-        <pubTime>2017-10-29T16:00:00.000Z</pubTime>
-        
-        <tag>php</tag>
-         
-        <tag>psr</tag>
-         
-         
-           
-             
-              <breadCrumb title="php" url="https://zhhzone.github.io/categories/php/"/>
           
         </display>
     </data>

@@ -74,25 +74,25 @@
 
 
 
-  <link rel="alternate" href="/atom.xml" title="" type="application/atom+xml" />
+  <link rel="alternate" href="/atom.xml" title="静以致远" type="application/atom+xml" />
 
 
 
 
 
 
-<meta name="description" content="PHP PSR-4This PSR describes a specification for autoloading classes from file paths. It is fully interoperable, and can be used in addition to any other autoloading specification, including PSR-0. Th">
+<meta name="description" content="#PSR4 autoloader spl_autoload_register —- 将函数注册到SPL __autoload函数队列中 Closure Example12345678910111213141516171819202122232425262728293031&amp;lt;?php/** * An example of a project-specific implementation. *">
 <meta name="keywords" content="php,psr">
 <meta property="og:type" content="article">
 <meta property="og:title" content="psr4">
 <meta property="og:url" content="https://zhhzone.github.io/2017/10/30/psr4/index.html">
-<meta property="og:site_name">
-<meta property="og:description" content="PHP PSR-4This PSR describes a specification for autoloading classes from file paths. It is fully interoperable, and can be used in addition to any other autoloading specification, including PSR-0. Th">
+<meta property="og:site_name" content="静以致远">
+<meta property="og:description" content="#PSR4 autoloader spl_autoload_register —- 将函数注册到SPL __autoload函数队列中 Closure Example12345678910111213141516171819202122232425262728293031&amp;lt;?php/** * An example of a project-specific implementation. *">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2017-10-31T07:13:39.000Z">
+<meta property="og:updated_time" content="2018-10-12T07:19:39.764Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="psr4">
-<meta name="twitter:description" content="PHP PSR-4This PSR describes a specification for autoloading classes from file paths. It is fully interoperable, and can be used in addition to any other autoloading specification, including PSR-0. Th">
+<meta name="twitter:description" content="#PSR4 autoloader spl_autoload_register —- 将函数注册到SPL __autoload函数队列中 Closure Example12345678910111213141516171819202122232425262728293031&amp;lt;?php/** * An example of a project-specific implementation. *">
 
 
 
@@ -128,7 +128,7 @@
 
 
 
-  <title>psr4 | </title>
+  <title>psr4 | 静以致远</title>
   
 
 
@@ -158,7 +158,7 @@
     <div class="custom-logo-site-title">
       <a href="/"  class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title"></span>
+        <span class="site-title">静以致远</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
@@ -318,7 +318,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="">
+      <meta itemprop="name" content="静以致远">
     </span>
 
     
@@ -398,13 +398,15 @@
       
 
       
-        <blockquote>
-<p><a href="http://www.php-fig.org/psr/psr-4" target="_blank" rel="noopener">PHP PSR-4</a><br>This PSR describes a specification for autoloading classes from file paths. It is fully interoperable, and can be used in addition to any other autoloading specification, including PSR-0. This PSR also describes where to place files that will be autoloaded according to the specification.</p>
-</blockquote>
+        <p>#PSR4 autoloader</p>
 <p>spl_autoload_register —- 将函数注册到SPL __autoload函数队列中</p>
 <p>Closure Example<br><figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"><span class="comment">/**</span></span><br><span class="line"><span class="comment"> * An example of a project-specific implementation.</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * After registering this autoload function with SPL, the following line</span></span><br><span class="line"><span class="comment"> * would cause the function to attempt to load the \Foo\Bar\Baz\Qux class</span></span><br><span class="line"><span class="comment"> * from /path/to/project/src/Baz/Qux.php:</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> *      new \Foo\Bar\Baz\Qux;</span></span><br><span class="line"><span class="comment"> *</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@param</span> string $class The fully-qualified class name.</span></span><br><span class="line"><span class="comment"> * <span class="doctag">@return</span> void</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"> spl_autoload_register(<span class="function"><span class="keyword">function</span> <span class="params">($class)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    $prefix = <span class="string">'\Vendor'</span>;</span><br><span class="line">    $baseDir = <span class="keyword">__DIR__</span>.<span class="string">'/'</span>;</span><br><span class="line"></span><br><span class="line">    $len = strlen($prefix);</span><br><span class="line">    <span class="keyword">if</span> (! strncmp($prefix, $class, $len)) &#123;</span><br><span class="line">        <span class="keyword">return</span> ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    $file = $baseDir .str_replace(<span class="string">'\\'</span>, <span class="string">'/'</span>, $class).<span class="string">'.php'</span>;</span><br><span class="line">    <span class="keyword">if</span> (file_exists($file)) &#123;</span><br><span class="line">        <span class="keyword">require</span> $file;</span><br><span class="line">        <span class="comment">// require_once($file);</span></span><br><span class="line">    &#125;</span><br><span class="line"> &#125;);</span><br><span class="line"></span><br><span class="line"> $a = <span class="keyword">new</span> \Vendor\Food\Food();</span><br></pre></td></tr></table></figure></p>
 <p>class Example<br>spl_autoload_register(array(class,’function’)); 注册类方法</p>
 <figure class="highlight php"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">&lt;?php</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">class</span> <span class="title">ClassLoader</span></span></span><br><span class="line"><span class="class"></span>&#123;</span><br><span class="line">    <span class="keyword">public</span> $prefixesMap = <span class="keyword">array</span>();</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">register</span> <span class="params">()</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        spl_autoload_register(<span class="keyword">$this</span>, <span class="string">'loadClass'</span>);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">addNamespace</span> <span class="params">($prefix, $base_dir, $prepend = false)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        $prefix = trim($prefix, <span class="string">'\\'</span>).<span class="string">'\\'</span>;</span><br><span class="line"></span><br><span class="line">        $base_dir = rtrim($base_dir, DIRECTORY_SEPARATOR).<span class="string">'/'</span>;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// initialize the namespace prefix array</span></span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="keyword">$this</span>-&gt;prefixesMap[$prefix]) === <span class="keyword">false</span>) &#123;</span><br><span class="line">            <span class="keyword">$this</span>-&gt;prefixesMap[$prefix] = <span class="keyword">array</span>();</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="comment">// retain the base directory for the namespace prefix</span></span><br><span class="line">        <span class="keyword">if</span> ($prepend) &#123;</span><br><span class="line">            array_unshift(<span class="keyword">$this</span>-&gt;prefixesMap[$prefix], $base_dir);</span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            array_push(<span class="keyword">$this</span>-&gt;prefixesMap[$prefix], $base_dir);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">    &#125; </span><br><span class="line"></span><br><span class="line">    <span class="keyword">public</span> <span class="function"><span class="keyword">function</span> <span class="title">loadClass</span> <span class="params">($class)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        $prefix = $class;   </span><br><span class="line">        <span class="keyword">while</span> ( <span class="keyword">false</span> !== $pos = strrpos($prefix, <span class="string">'\\'</span>)) &#123;</span><br><span class="line">            $prefix = substr($class, <span class="number">0</span>, $pos + <span class="number">1</span>);</span><br><span class="line">            $relative_class = substr($class, $pos + <span class="number">1</span>);</span><br><span class="line"></span><br><span class="line">            $mapped_file = <span class="keyword">$this</span>-&gt;loadMapFile($prefix, $relative_class);</span><br><span class="line">            <span class="keyword">if</span> ($mapped_file) &#123;</span><br><span class="line">                <span class="keyword">return</span> $mapped_file;</span><br><span class="line">            &#125;</span><br><span class="line"></span><br><span class="line">            $prefix = rtrim($prefix, <span class="string">'\\'</span>);</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">protected</span> <span class="function"><span class="keyword">function</span> <span class="title">loadMapFile</span> <span class="params">($prefix, $relative_class)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">   </span><br><span class="line">        <span class="keyword">if</span> (<span class="keyword">isset</span>(<span class="keyword">$this</span>-&gt;prefixesMap[$prefix]) === <span class="keyword">false</span>) &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">foreach</span> (<span class="keyword">$this</span>-&gt;prefixesMap[$prefix] <span class="keyword">as</span> $base_dir) &#123;</span><br><span class="line">            $file = $base_dir.$relative_class.<span class="string">'.php'</span>;</span><br><span class="line">            <span class="keyword">if</span> (<span class="keyword">$this</span>-&gt;include($file)) &#123;</span><br><span class="line">                <span class="keyword">return</span> $file;</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">return</span> ;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">protected</span> <span class="function"><span class="keyword">function</span> <span class="title">include</span> <span class="params">($file)</span></span></span><br><span class="line"><span class="function">    </span>&#123;</span><br><span class="line">        <span class="keyword">if</span> (file_exists($file)) &#123;</span><br><span class="line">            <span class="keyword">require</span> $file;</span><br><span class="line">            <span class="keyword">return</span> <span class="keyword">true</span>;</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> <span class="keyword">false</span>;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<blockquote>
+<p><a href="http://www.php-fig.org/psr/psr-4" target="_blank" rel="noopener">PHP PSR-4</a></p>
+</blockquote>
+
       
     </div>
     
@@ -436,8 +438,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/10/16/2017-10-16/" rel="next" title="psr-3">
-                <i class="fa fa-chevron-left"></i> psr-3
+              <a href="/2017/10/30/psr4_composr_autoloading/" rel="next" title="composer autoload 解析">
+                <i class="fa fa-chevron-left"></i> composer autoload 解析
               </a>
             
           </div>
@@ -525,7 +527,7 @@
               
                 <a href="/archives/">
               
-                  <span class="site-state-item-count">6</span>
+                  <span class="site-state-item-count">7</span>
                   <span class="site-state-item-name">日志</span>
                 </a>
               </div>
