@@ -54,7 +54,7 @@
     <link href="https://zhhzone.github.io/2017/10/31/psr6/"/>
     <id>https://zhhzone.github.io/2017/10/31/psr6/</id>
     <published>2017-10-31T07:12:22.000Z</published>
-    <updated>2018-04-11T14:44:03.383Z</updated>
+    <updated>2018-10-17T09:32:53.219Z</updated>
     
     <summary type="html">
     
@@ -62,8 +62,9 @@
       
         
         
-          &lt;blockquote&gt;
-&lt;p&gt;&lt;a href=&quot;http://www.php-fig.org/psr/psr-6/&quot; target=&quot;_blank&quot; rel=&quot;noopener&quot;&gt;PHP psr6&lt;/a&gt;&lt;br&gt;The goal of this PSR is to allow
+          &lt;hr&gt;
+&lt;p&gt;PSR-6和psr-16同属于PSR标准缓存相关的,所以我将其整理在一起&lt;/p&gt;
+&lt;p&gt;PSR-6是创建一套通用的接口规范,能够让开发人员整合到现有框架和系统,而不需要去定制开发。同时了定义了Cache的最基本的三个组成部分,CachePool,CacheItem
         
       
     

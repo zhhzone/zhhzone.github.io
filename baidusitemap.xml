@@ -4,6 +4,28 @@
 
     
   <url>
+    <loc>https://zhhzone.github.io/2017/10/31/psr6/</loc>
+    <lastmod>2018-10-17T09:32:53.219Z</lastmod>
+    <data>
+        <display>
+        <title>psr6</title>
+        <pubTime>2017-10-31T07:12:22.000Z</pubTime>
+        
+        <tag>php</tag>
+         
+        <tag>psr</tag>
+         
+         
+           
+             
+              <breadCrumb title="php" url="https://zhhzone.github.io/categories/php/"/>
+          
+        </display>
+    </data>
+    </url>
+
+    
+  <url>
     <loc>https://zhhzone.github.io/2017/10/30/psr4_composr_autoloading/</loc>
     <lastmod>2018-10-12T10:00:03.126Z</lastmod>
     <data>
@@ -54,28 +76,6 @@
         <display>
         <title>psr1,psr2</title>
         <pubTime>2016-10-18T00:07:00.000Z</pubTime>
-        
-        <tag>php</tag>
-         
-        <tag>psr</tag>
-         
-         
-           
-             
-              <breadCrumb title="php" url="https://zhhzone.github.io/categories/php/"/>
-          
-        </display>
-    </data>
-    </url>
-
-    
-  <url>
-    <loc>https://zhhzone.github.io/2017/10/31/psr6/</loc>
-    <lastmod>2018-04-11T14:44:03.383Z</lastmod>
-    <data>
-        <display>
-        <title>psr6</title>
-        <pubTime>2017-10-31T07:12:22.000Z</pubTime>
         
         <tag>php</tag>
          
